@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transmission Media Analyzer</title>
+
+    <link rel="stylesheet" href="tool.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <img src="image/logo.png"
+                 class="logo"
+                 alt="MIT Academy of Engineering">
+
+            <div class="header-text">
+
+                <h1>TRANSMISSION MEDIA ANALYZER</h1>
+
+                <p>
+                    Enter your communication requirements and get a
+                    ranked recommendation based on performance,
+                    cost, reliability and application environment.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- STEP INDICATOR -->
+
+        <div class="steps">
+
+            <div class="step active">
+                <span>1</span>
+                <p>Requirements</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>2</span>
+                <p>Analysis</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>3</span>
+                <p>Recommendation</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- INPUT SECTION -->
+
+        <section class="input-card">
+
+            <div class="section-heading">
+
+                <h2>Communication Requirements</h2>
+
+                <p>
+                    Select the option that best matches your project requirements.
+                </p>
+
+            </div>
+
+
+
+            <!-- SPEED -->
+
+            <div class="question">
+
+                <h3>1. Required Data Speed</h3>
+
+                <p class="question-help">
+                    How much data transmission speed is required?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="speed"
+                               value="low">
+
+                        <span class="option-content">
+
+                            <strong>Low</strong>
+
+                            <small>
+                                Basic data transmission
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="speed"
+                               value="medium">
+
+                        <span class="option-content">
+
+                            <strong>Medium</strong>
+
+                            <small>
+                                Moderate data transfer
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="speed"
+                               value="high">
+
+                        <span class="option-content">
+
+                            <strong>High</strong>
+
+                            <small>
+                                High-speed communication
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="speed"
+                               value="very-high">
+
+                        <span class="option-content">
+
+                            <strong>Very High</strong>
+
+                            <small>
+                                Maximum performance required
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DISTANCE -->
+
+            <div class="question">
+
+                <h3>2. Transmission Distance</h3>
+
+                <p class="question-help">
+                    What distance should the communication system cover?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="distance"
+                               value="short">
+
+                        <span class="option-content">
+
+                            <strong>Short</strong>
+
+                            <small>
+                                Room or small network
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="distance"
+                               value="medium">
+
+                        <span class="option-content">
+
+                            <strong>Medium</strong>
+
+                            <small>
+                                Building or campus
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="distance"
+                               value="long">
+
+                        <span class="option-content">
+
+                            <strong>Long</strong>
+
+                            <small>
+                                City or regional connection
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="distance"
+                               value="very-long">
+
+                        <span class="option-content">
+
+                            <strong>Very Long</strong>
+
+                            <small>
+                                Large geographical coverage
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BUDGET -->
+
+            <div class="question">
+
+                <h3>3. Available Budget</h3>
+
+                <p class="question-help">
+                    What level of budget is available for the communication system?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="budget"
+                               value="low">
+
+                        <span class="option-content">
+
+                            <strong>Low</strong>
+
+                            <small>
+                                Cost should be minimized
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="budget"
+                               value="medium">
+
+                        <span class="option-content">
+
+                            <strong>Medium</strong>
+
+                            <small>
+                                Balanced cost and performance
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="budget"
+                               value="high">
+
+                        <span class="option-content">
+
+                            <strong>High</strong>
+
+                            <small>
+                                Performance is prioritized
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RELIABILITY -->
+
+            <div class="question">
+
+                <h3>4. Required Reliability</h3>
+
+                <p class="question-help">
+                    How reliable should the communication system be?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="reliability"
+                               value="standard">
+
+                        <span class="option-content">
+
+                            <strong>Standard</strong>
+
+                            <small>
+                                Normal reliability
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="reliability"
+                               value="high">
+
+                        <span class="option-content">
+
+                            <strong>High</strong>
+
+                            <small>
+                                Stable communication required
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="reliability"
+                               value="very-high">
+
+                        <span class="option-content">
+
+                            <strong>Very High</strong>
+
+                            <small>
+                                Critical communication
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INTERFERENCE -->
+
+            <div class="question">
+
+                <h3>5. Interference Level</h3>
+
+                <p class="question-help">
+                    How much electromagnetic interference may be present?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="interference"
+                               value="low">
+
+                        <span class="option-content">
+
+                            <strong>Low</strong>
+
+                            <small>
+                                Clean communication environment
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="interference"
+                               value="medium">
+
+                        <span class="option-content">
+
+                            <strong>Medium</strong>
+
+                            <small>
+                                Moderate interference
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="interference"
+                               value="high">
+
+                        <span class="option-content">
+
+                            <strong>High</strong>
+
+                            <small>
+                                Strong interference expected
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ENVIRONMENT -->
+
+            <div class="question">
+
+                <h3>6. Application Environment</h3>
+
+                <p class="question-help">
+                    Where will the transmission medium mainly be used?
+                </p>
+
+
+                <div class="options environment-options">
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="environment"
+                               value="lan">
+
+                        <span class="option-content">
+
+                            <strong>LAN / Computer Networking</strong>
+
+                            <small>
+                                Local networks and computer systems
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="environment"
+                               value="long-distance">
+
+                        <span class="option-content">
+
+                            <strong>Long-Distance Communication</strong>
+
+                            <small>
+                                Wide-area and geographical connections
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="environment"
+                               value="wireless">
+
+                        <span class="option-content">
+
+                            <strong>Wireless Communication</strong>
+
+                            <small>
+                                Communication without physical cables
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="environment"
+                               value="pcb">
+
+                        <span class="option-content">
+
+                            <strong>PCB / Embedded System</strong>
+
+                            <small>
+                                High-frequency PCB and embedded circuits
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input type="radio"
+                               name="environment"
+                               value="general">
+
+                        <span class="option-content">
+
+                            <strong>General Communication</strong>
+
+                            <small>
+                                General-purpose communication systems
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <div class="analyze-area">
+
+                <button id="analyzeBtn" class="analyze-btn">
+
+                    Analyze & Recommend
+
+                    <span>→</span>
+
+                </button>
+
+                <p id="errorMessage" class="error-message"></p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULT SECTION -->
+
+        <section id="resultSection" class="result-section">
+
+            <!-- Recommendation will be inserted by JavaScript -->
+
+        </section>
+
+
+
+        <!-- FOOTER BUTTONS -->
+
+        <div class="bottom-buttons">
+
+            <a href="theory.html" class="secondary-btn">
+                ← Back to Transmission Media
+            </a>
+
+            <button id="resetBtn" class="secondary-btn reset-btn">
+                Reset Analysis
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="tool.js"></script>
+
+</body>
+
+</html>

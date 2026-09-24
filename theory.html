@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transmission Media</title>
+
+    <link rel="stylesheet" href="theory.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <img src="image/logo.png" class="mit-logo" alt="MIT Academy of Engineering">
+
+            <div class="project-heading">
+
+                <h1>TRANSMISSION MEDIA</h1>
+
+                <p>
+                    Explore different types of transmission media,
+                    their characteristics, advantages and applications.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- MAIN NAVIGATION -->
+
+        <nav class="main-nav">
+
+            <button class="nav-btn active" onclick="showOverview()">
+                Overview
+            </button>
+
+            <button class="nav-btn" onclick="showCategory('guided')">
+                Guided Media
+            </button>
+
+            <button class="nav-btn" onclick="showCategory('unguided')">
+                Unguided Media
+            </button>
+
+        </nav>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <h2>Transmission Media</h2>
+
+
+                <h3>Guided Media</h3>
+
+                <button class="media-btn" onclick="showMedia('twisted')">
+                    Twisted Pair Cable
+                </button>
+
+                <button class="media-btn" onclick="showMedia('coaxial')">
+                    Coaxial Cable
+                </button>
+
+                <button class="media-btn" onclick="showMedia('fiber')">
+                    Optical Fiber Cable
+                </button>
+
+                <button class="media-btn" onclick="showMedia('stripline')">
+                    Stripline
+                </button>
+
+                <button class="media-btn" onclick="showMedia('microstripline')">
+                    Microstripline
+                </button>
+
+
+                <div class="divider"></div>
+
+
+                <h3>Unguided Media</h3>
+
+                <button class="media-btn" onclick="showMedia('radio')">
+                    Radio Waves
+                </button>
+
+                <button class="media-btn" onclick="showMedia('microwave')">
+                    Microwaves
+                </button>
+
+                <button class="media-btn" onclick="showMedia('infrared')">
+                    Infrared
+                </button>
+
+                <button class="media-btn" onclick="showMedia('satellite')">
+                    Satellite
+                </button>
+
+            </aside>
+
+
+            <!-- INFORMATION AREA -->
+
+            <section class="information" id="information">
+
+                <!-- Overview -->
+
+                <div id="overview">
+
+                    <h2>Transmission Media</h2>
+
+                    <p class="intro">
+                        Transmission media are communication channels used
+                        to carry data signals from one device to another.
+                        They are broadly classified into guided and
+                        unguided media.
+                    </p>
+
+
+                    <div class="overview-cards">
+
+                        <div class="overview-card">
+
+                            <h3>Guided Media</h3>
+
+                            <p>
+                                Guided media transmit signals through a
+                                physical path such as copper cables or
+                                optical fiber.
+                            </p>
+
+                            <button onclick="showCategory('guided')">
+                                Explore Guided Media →
+                            </button>
+
+                        </div>
+
+
+                        <div class="overview-card">
+
+                            <h3>Unguided Media</h3>
+
+                            <p>
+                                Unguided media transmit signals wirelessly
+                                through air or space using electromagnetic
+                                waves.
+                            </p>
+
+                            <button onclick="showCategory('unguided')">
+                                Explore Unguided Media →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- BOTTOM BUTTONS -->
+
+        <div class="bottom-buttons">
+
+            <a href="index.html" class="back-btn">
+                ← Back to Home
+            </a>
+
+            <a href="tool.html" class="evaluate-btn">
+                Evaluate Transmission Media →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="theory.js"></script>
+
+</body>
+
+</html>
